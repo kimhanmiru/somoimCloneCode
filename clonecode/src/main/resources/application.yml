@@ -1,0 +1,15 @@
+spring: 
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+server:
+  port: 80
+  servlet:
+    session:
+      timeout: 6000
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
