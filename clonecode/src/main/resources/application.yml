@@ -13,3 +13,20 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+
+dbenv:
+  hp:
+    datasource:
+      jdbc-url: jdbc:mariadb://localhost:3306/hanwhain 
+      driver-class-name: org.mariadb.jdbc.Driver
+      username: user01
+      password: 1212
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        maximum-pool-size: 10
+        connection-test-query: SELECT 1
+        minimum-idle: 5
+        connection-timeout: 100000
+
+mybatis:
+  mapper-locations: classpath:**/mapper/*.xml
